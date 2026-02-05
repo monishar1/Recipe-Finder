@@ -33,7 +33,8 @@ function getMealList() {
 
       mealList.innerHTML = html;
     })
-    .catch(() => {
+    .catch(error => {
+      console.error(error);
       mealList.innerHTML = "<h2>Error fetching data ❌</h2>";
     });
 }
